@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+    <title>Yashodeep Tabla Classes > Home</title>
+    <style>
+        /* .boximage{
+            position: absolute;
+            left: 195px;
+            align-items: center;
+            width: 1000px;
+        } */
+       
+body{
+  background-color: rgba(138, 179, 150, 0.452);
+}
+
+.slidimg{
+    width: 80%;
+    height: 80%;
+    box-sizing: border-box;
+    position: relative;
+    align-items:center;
+    left: 9%;
+    /* right: 20%; */
+
+}
+.p-5 {
+  padding: 1rem !important;
+
+  
+}
+/* navbar */
+.navbar{
+  background-color: #00000044;
+}
+.navbar-brand{
+        font-weight: 500;
+        color: #000000;
+        font-size: 24px;
+        transition: 0.3s color;
+    }
+
+
+     .login-button{
+        background-color: #c554e7;
+        color: aliceblue;
+        font-size: 14px;
+        padding: 8px 20px;
+        border-radius: 50px;
+        text-decoration: none;
+        transition: 0.3s background-color;
+        
+    }
+    .login-button:hover{
+        background-color: rgb(69, 194, 177);
+    }
+    .navbar-toggler{
+        border: none;
+        font-size: 1.25rem;
+
+    }
+    .navbar-toggler:focus, btn-clos:focus{
+        box-shadow: none;
+        outline: none;
+    }
+    .nav-link{
+        color: #666777;
+        font-weight: 500;
+        position: relative;
+    }
+    .nav-link:hover, .nav-link:active{
+        color: #000;
+
+    }
+    @media (min-width: 991px){
+    .nav-link::before{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width:0;
+        height: 2px;
+        background: springgreen;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+.container-fluid a{
+  color: white;
+}
+.videolink{
+  padding: 30px 40px;
+  align-content: center;
+}
+.footer{
+  text-decoration:#000;
+  font-size: medium;
+  font-weight: 100;
+  background-color: #0000004b;
+}
+body{
+  background-size: cover;
+}
+.offcanvas-body ul li a{
+  color: azure;
+}
+.col-md-4 ul li i{
+  color: aliceblue;
+}
+
+    </style>
+</head>
+<body background="bg12.jpg">
+   <!-- navbar -->
+   <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="#">Yashodeep tabla Classes</table></a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-4">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="registeration.html">Regisrtation</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="exam.html">Exams</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="home.html#info">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="home.html#footer">Contact US</a>
+              </li>                
+          </ul>
+        </div>
+      </div>
+      <a href="home.html#formofreg" class="login-button">login</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <br><br><br>
+  
+ 
+    <!-- sliding image -->
+    <div class="slidimg" >
+        <div class="shadow-lg p-1 mb-5 bg-body-tertiary rounded">
+    <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="bg2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Capture.JPG" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="Tabla Image.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+      </div>
+
+      <!-- login -->
+    <div class="container col-lg-4 shadow p-3 mt-3 mb-5 bg-body rounded">
+        <form method="post" action="mysqlreg.php" id="formofreg">
+            <h1 class="h1 mb-3 text-center">Student login</h1>
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" name="FName" values="dname" id="floatingInput" placeholder="First" required>
+                <label for="floatingInput">User Id</label>
+              </div>
+             
+              <div class="form-floating mb-3">
+                <input type="password" class="form-control" name="fPassword" values="dpassword" placeholder="**********">
+                <label for="floatingInput5">Password</label>
+              </div>
+              
+              <a href="reg2.html" style="--clr:#1e9bff"><button type="button" class="btn btn-primary">login</button></a><hr>
+              
+              <a href="Prajwal Regisrtation Form.html">Register</a>
+           
+              
+              <!-- <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+               <a href="reg2.html"> <input class="btn btn-outline-primary" type="submit" name="submit" value="Next"></a>
+              </div> -->
+        </form>
+      </div>
+    </div>
+
+    <!-- cards-->
+
+    <div class="row row-cols-1 row-cols-md-3 g-6">
+      <div class="col">
+        <div class="card h-100">
+          <img src="prajwal.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title" id="info">About us</h5>
+            <p class="card-text">pt.Prajwal Jadhav has 14 years of  experienc in Tabla of <b>Farukabad Gharana</b>.He is a <b>A grade</b> artist of <b>All India Radio</b>.Prajwal is Visharad in tabla, and he is taking tara,Maharashtra.He is now preparing for Alankar.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Tabla Image.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">About Tabla</h5>
+            <p class="card-text">Tabla, pair of small drums fundamental (since the 18th century) to Hindustani music of northern India, Pakistan, and Bangladesh. The higher-pitched of the two drums, which is played with the right hand, is also referred to individually as the tabla or as the daya (dahina or dayan, meaning “right”). It is a single-headed drum usually of wood and having the profile of two truncated cones bulging at the centre, the lower portion shorter. It is about 25 cm (10 inches) in height and 15 cm (6 inches) across. Skin tension is maintained by thong lacings and wooden dowels that are tapped with a hammer in retuning.</p>
+          </div>
+          <div class="card-footer">
+            <butto><a href="">Read more</a></button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="Capture.JPG" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Gharhana</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt sequi soluta sapiente explicabo id modi ab nam expedita esse consequuntur. Id aliquam facere provident explicabo est libero illo adipisci iste.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-body-secondary">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+<!-- end card -->
+
+<!-- yt video -->
+<div class="videolink">
+  <iframe width="420" height="315"
+src="https://youtu.be/0utdnyx32E8?si=D8JXYPrDWCUbxLW0">
+</iframe>
+</div>
+
+   
+         
+<script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+
+</script>
+
+
+<br><br><hr>   
+<!-- footer start -->
+    <footer class="footer p-2" id="footer"> 
+        <script type="module" src="http://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="http://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <div class="container"> 
+            <div class="row"> 
+                <div class="col-md-4"> 
+                    <h2>Yashodeep Tabla Classes </h2> 
+                    <img src="Yashodeep Tabla.png" width="200vw" height="140vh">
+                </div> 
+                <!-- <div class="col-md-3"> 
+                    <h5>About Us</h5> 
+                    <p> 
+                      A tabla is a pair of hand drums from the Indian subcontinent. Since the 18th century, it has been the principal percussion instrument in Hindustani classical music, where it may be played solo, as an accompaniment with other instruments and vocals, and as a part of larger ensembles. 
+                    </p> 
+                </div>  -->
+                <div class="col-md-4"> 
+                    <h5>Contact Us</h5> 
+                    <ul class="list-unstyled"> 
+                        <li>Email: <b>prajwal.jadhav2209@gmail.com</b></li> 
+                        <li>Phone: <b>+91 90678 77695</b></li> 
+                        <li>Address: <b>Bharatgaon, satara, Maharashtra</b> </li> 
+                    </ul> 
+                </div> 
+                <div class="col-md-4"> 
+                    <h5>Follow Us</h5> 
+                    <ul class="list-inline footer-links"> 
+                        <li class="list-inline-item"> 
+                          <a href="#"><ion-icon name="logo-twitter"></ion-icon> 
+                                <i class="fab fa-twitter">twitter.com/jadhavprajwal22?s=09</i> 
+                          </a> 
+                          </li> 
+                        <li class="list-inline-item"> 
+                          <a href="#"><ion-icon name="logo-facebook"></ion-icon> 
+                                <i class="fab fa-facebook">prajwaljadhav</i> 
+                          </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                          <a href="#"> <ion-icon name="logo-linkedin"></ion-icon>
+                                <i class="fab fa-linkedin"> Prajwald.jadhav</i>
+                          </a> 
+                        </li> 
+                        <li class="list-inline-item"> 
+                          <a href="#"> <ion-icon name="logo-instagram"></ion-icon>
+                                <i class="fab fa-instagram">prajwaljadhav3930</i> 
+                          </a> 
+                        </li> 
+                    </ul> 
+                </div> 
+            </div> 
+            
+            <div class="row"> 
+                <div class="col-md-6"> 
+                    <p>© 2024 All rights reserved.</p> 
+                </div> 
+                 
+            </div> 
+        </div> 
+        
+      </footer>
+</body>
+</html>
